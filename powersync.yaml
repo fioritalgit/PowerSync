@@ -2,11 +2,15 @@
 replication:
   connections:
     - type: postgresql
-      uri: postgresql://postgres:bnqS7vCV2B75Vz0z@db.pbjpdkvdukiwkcskyanp.supabase.co:5432/postgres?sslmode=require
+      uri: postgresql://postgres:YOUR_PASSWORD@db.pbjpdkvdukiwkcskyanp.supabase.co:5432/postgres?sslmode=require
 
 storage:
   type: postgresql
-  uri: postgresql://postgres:bnqS7vCV2B75Vz0z@db.pbjpdkvdukiwkcskyanp.supabase.co:5432/postgres?sslmode=require
+  uri: postgresql://postgres:YOUR_PASSWORD@db.pbjpdkvdukiwkcskyanp.supabase.co:5432/postgres?sslmode=require
+
+# Disabilita migrazioni automatiche
+migrations:
+  disable_auto_migration: true
 
 port: 8080
 
