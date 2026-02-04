@@ -1,14 +1,13 @@
 # PowerSync Configuration
+# IMPORTANTE: Sostituisci YOUR_PASSWORD con la tua vera password di Supabase
 replication:
   connections:
     - type: postgresql
-      # Connection string to your Supabase database
-      uri: ${DATABASE_URL}
+      uri: postgresql://postgres:YOUR_PASSWORD@db.pbjpdkvdukiwkcskyanp.supabase.co:5432/postgres?sslmode=require
 
 storage:
   type: postgresql
-  # Using the same database for storage
-  uri: ${DATABASE_URL}
+  uri: postgresql://postgres:YOUR_PASSWORD@db.pbjpdkvdukiwkcskyanp.supabase.co:5432/postgres?sslmode=require
 
 port: 8080
 
