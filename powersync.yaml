@@ -1,0 +1,27 @@
+# PowerSync Configuration
+replication:
+  connections:
+    - type: postgresql
+      # Connection string to your Supabase database
+      uri: ${DATABASE_URL}
+      sslmode: require
+
+storage:
+  type: postgresql
+  # Using the same database for storage
+  uri: ${DATABASE_URL}
+  sslmode: require
+
+port: 8080
+
+# Basic sync rules - customize based on your tables
+sync_rules:
+  content: |
+    bucket_definitions:
+      global:
+        # Add your tables here
+        # Example:
+        # data:
+        #   - SELECT * FROM posts
+        #   - SELECT * FROM comments
+        data: []
