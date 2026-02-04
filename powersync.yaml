@@ -1,24 +1,17 @@
 # PowerSync Configuration
-# IMPORTANTE: Sostituisci YOUR_PASSWORD con la tua vera password di Supabase
 replication:
   connections:
     - type: postgresql
-      uri: postgresql://postgres:bnqS7vCV2B75Vz0z@db.pbjpdkvdukiwkcskyanp.supabase.co:5432/postgres?sslmode=require
+      uri: postgresql://powersync_user:bnqS7vCV2B75Vz0z@db.pbjpdkvdukiwkcskyanp.supabase.co:5432/postgres?sslmode=require
 
 storage:
   type: postgresql
-  uri: postgresql://postgres:bnqS7vCV2B75Vz0z@db.pbjpdkvdukiwkcskyanp.supabase.co:5432/postgres?sslmode=require
+  uri: postgresql://powersync_user:bnqS7vCV2B75Vz0z@db.pbjpdkvdukiwkcskyanp.supabase.co:5432/postgres?sslmode=require
 
 port: 8080
 
-# Basic sync rules - customize based on your tables
 sync_rules:
   content: |
     bucket_definitions:
       global:
-        # Add your tables here
-        # Example:
-        # data:
-        #   - SELECT * FROM posts
-        #   - SELECT * FROM comments
         data: []
