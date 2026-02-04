@@ -6,8 +6,9 @@ COPY powersync.yaml /app/powersync.yaml
 # Expose the port
 EXPOSE 8080
 
-# Set working directory
-WORKDIR /app
+# Set environment variable for config path
+ENV POWERSYNC_CONFIG_PATH=/app/powersync.yaml
 
-# Start PowerSync with the configuration file
-CMD ["sh", "-c", "start -r unified -c /app/powersync.yaml"]
+# Start PowerSync
+ENTRYPOINT ["start"]
+CMD ["-r", "unified"]
