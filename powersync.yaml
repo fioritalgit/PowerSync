@@ -1,7 +1,7 @@
 replication:
   connections:
     - type: postgresql
-      uri: postgresql://powersync_role:bnqS7vCV2B75Vz0z@db.pbjpdkvdukiwkcskyanp.supabase.co:5432/postgres?sslmode=verify-full&ipv6=false
+      uri: postgresql://postgres.pbjpdkvdukiwkcskyanp:bnqS7vCV2B75Vz0z@aws-1-eu-north-1.pooler.supabase.com:5432/postgres
       sslmode: verify-full
 
 storage:
