@@ -20,9 +20,8 @@ sync_rules:
 client_auth:
   jwks:
     keys:
-      - kty: "RSA"
-        e: "AQAB"
-        use: "sig"
-        kid: "dev-key-1"
-        alg: "RS256"
-        n: "pktxVwzn_2SanQF8uQz0bnuHE2jgEHOwuBpc0nUX2b82h7xFUQ9WDGdjtNSd4JGfUIaHX3YKENIIIHnHESvh-PaMANtSm9oIsxwtrYu3j_WUuE9C5cIBCLfKhnWxEuxZGVf70QmFXHLmuycR02_A1h3HQL6v6SM51TSHJH8D38D2oKfCajsv0FZUIjTBZBAMhh4mUdVTmV2riWEORp4j5PzdRADBxSw0UNwzkhbN9TJiBqvwgqdmx1TmwcyEYjnPkf89bNZGBR0zDt1Mv2wF8tfbQejEP11EaNUvFEl3_RuaHtc9dnkVT_1DGLmKRen7vZfRjwlBC6SBl8N_s6Pm9w"
+      - kty: 'RSA'
+        n: 'j7A5dx5xzU_QJJ5KbUx6-qHaJ9-EjejFPwTX6d3Nn9qoueEPuXxBiCRVBE-vg4HQygRMYE4PlFdXeVX1vkYODInEK7wUBnu2d2glHKcCq08U9Y3J6vNKjrYZODSJf6b6HseguwRwBBjihthGxckg6auMxXAGxwMJkFRTpUylZ1RvZskwBp5cffawPA6myNtpHScvX2CClqvB-4RG9rqrSCJx0LcL1GSqf6auRelqZuVtv2qB6s83VNtNDoAeqY2KZal8C9PSU5Bb8aJ-brT3FxqAUvMiju9W0EZCh22jcFA3koKDucG0sYHHA1ZkZwYf6rXXAoOEyKDOZuOio90xow'
+        e: 'AQAB'
+        alg: 'RS256'
+        kid: 'dev-key-1'
