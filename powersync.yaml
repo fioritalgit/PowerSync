@@ -15,9 +15,12 @@ sync_rules:
   content: |
     bucket_definitions:
       global:
-        data: []
+        # Recupera tutti i dati dalla tabella team_members di Supabase
+        data:
+          - select * from team_members
         
 client_auth:
+  audience: ['powersync']
   jwks:
     keys:
       - kty: 'RSA'
