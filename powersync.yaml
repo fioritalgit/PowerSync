@@ -7,7 +7,7 @@ replication:
 storage:
   type: postgresql
   uri: postgresql://powersync_storage_user:L2s7kyjYQdg6nw3LO0PJlpEvMDYnV1kM@dpg-d625c8shg0os7387qjcg-a.frankfurt-postgres.render.com/powersync_storage
-  sslmode: disable
+  sslmode: verify-full
 
 port: 8080
 
