@@ -16,3 +16,13 @@ sync_rules:
     bucket_definitions:
       global:
         data: []
+        
+client_auth:
+  jwks:
+    keys:
+      - kty: "RSA"
+        e: "AQAB"
+        use: "sig"
+        kid: "dev-key-1"
+        alg: "RS256"
+        n: "pktxVwzn_2SanQF8uQz0bnuHE2jgEHOwuBpc0nUX2b82h7xFUQ9WDGdjtNSd4JGfUIaHX3YKENIIIHnHESvh-PaMANtSm9oIsxwtrYu3j_WUuE9C5cIBCLfKhnWxEuxZGVf70QmFXHLmuycR02_A1h3HQL6v6SM51TSHJH8D38D2oKfCajsv0FZUIjTBZBAMhh4mUdVTmV2riWEORp4j5PzdRADBxSw0UNwzkhbN9TJiBqvwgqdmx1TmwcyEYjnPkf89bNZGBR0zDt1Mv2wF8tfbQejEP11EaNUvFEl3_RuaHtc9dnkVT_1DGLmKRen7vZfRjwlBC6SBl8N_s6Pm9w"
