@@ -17,7 +17,7 @@ sync_rules:
       global:
         # Recupera tutti i dati dalla tabella team_members di Supabase
         data:
-          - select * from team_members
+          - select * from TEST_POWERSYNC
         
 client_auth:
   # Supabase configuration
